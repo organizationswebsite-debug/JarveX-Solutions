@@ -57,11 +57,11 @@ Edit `lib/services.js`, `lib/fleet.js`, or `lib/blog.js` — every entry automat
 its own page with no extra routing code needed.
 
 ## SEO
-- `app/sitemap.ts` and `app/robots.ts` generate `/sitemap.xml` and `/robots.txt` automatically — no extra config needed.
+- `app/sitemap.js` and `app/robots.js` generate `/sitemap.xml` and `/robots.txt` automatically — no extra config needed.
 - Full Open Graph + Twitter Card metadata, plus a generated 1200×630 share image (`app/opengraph-image.png`), so links posted on social media / iMessage / Slack render with a real preview card.
 - JSON-LD structured data (`MovingCompany` schema) is injected in `app/layout.jsx`, including the Moaz Group parent-organization relationship and social profile links.
 - `app/icon.png` and `app/apple-icon.png` are auto-detected by Next.js as the favicon and Apple touch icon — no manual `<link>` tags required.
-- **Before going live:** update `SITE_URL` in `app/layout.jsx` and `app/sitemap.ts` from the placeholder `https://www.jarvexsolutions.com` to your real production domain, and swap the placeholder social URLs in `components/Footer.jsx` / the JSON-LD `sameAs` array for your real profiles.
+- **Before going live:** update `SITE_URL` in `app/layout.jsx` and `app/sitemap.js` from the placeholder `https://www.jarvexsolutions.com` to your real production domain, and swap the placeholder social URLs in `components/Footer.jsx` / the JSON-LD `sameAs` array for your real profiles.
 
 ## Performance
 - `next.config.js` sets long-lived immutable caching on build assets and generated images, plus `compress: true`.
