@@ -81,7 +81,7 @@ export default function ClientPlanForm({ plan, onClose }) {
       </button>
 
       {status === "error" && (
-        <p className="text-sm text-red-500 text-center">Something went wrong. Please call 1 (800) 555-0142.</p>
+        <p className="text-sm text-red-500 text-center">Something went wrong. Please call +1 (409) 419-3788.</p>
       )}
     </form>
   );
