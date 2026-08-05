@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background: #ff6a1a;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #edeae3;
+  color: #111111;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #ff6a1a;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+}
+.reveal.is-visible {
+  animation: fadeup 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+@keyframes fadeup {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Cream glass pill header */
+.pill-header {
+  background: rgba(247, 245, 240, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(17,17,17,0.08);
+}
+
+/* Orange shimmer text accent */
+.orange-shimmer {
+  background: linear-gradient(90deg, #ff6a1a 0%, #ffb27a 25%, #ff6a1a 50%, #ffb27a 75%, #ff6a1a 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 4s linear infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.card-premium {
+  transition: transform 0.4s cubic-bezier(0.16,1,0.3,1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+.card-premium:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px -25px rgba(17,17,17,0.25);
+  border-color: rgba(255,106,26,0.5);
+}
+
+/* Tilted trading-card hover-straighten effect */
+.tilt-card {
+  transition: transform 0.5s cubic-bezier(0.16,1,0.3,1), box-shadow 0.5s ease;
+  transform: rotate(var(--tilt, 0deg));
+}
+.tilt-card:hover {
+  transform: rotate(0deg) translateY(-10px) scale(1.03);
+  box-shadow: 0 35px 60px -20px rgba(17,17,17,0.3);
+  z-index: 10;
+}
+
+.ticker-mask {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.section-eyebrow {
+  letter-spacing: 0.18em;
+}
+
+/* Fixed-attachment hero background, with mobile fallback since iOS Safari
+   doesn't support background-attachment: fixed reliably */
+.hero-fixed-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+  .hero-fixed-bg {
+    background-attachment: scroll;
+  }
+}
+
+@keyframes bounceArrow {
+  0%, 100% { transform: translateY(0); opacity: 0.6; }
+  50% { transform: translateY(8px); opacity: 1; }
+}
+.bounce-arrow {
+  animation: bounceArrow 1.8s ease-in-out infinite;
+}
+
+/* Mobile menu panel + staggered item entrance */
+@keyframes panelIn {
+  from { opacity: 0; transform: translateY(-10px) scale(0.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.mobile-panel-in {
+  animation: panelIn 0.32s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+@keyframes mobileItemIn {
+  from { opacity: 0; transform: translateX(-10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+.mobile-item-in {
+  animation: mobileItemIn 0.3s ease-out both;
+}
+@keyframes pulseCall {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(255,106,26,0.45); }
+  50% { box-shadow: 0 0 0 6px rgba(255,106,26,0); }
+}
+.pulse-call {
+  animation: pulseCall 2.2s ease-in-out infinite;
+}
+
+/* Bracketed tag like [1/7] */
+.tag-index::before { content: "["; }
+.tag-index::after { content: "]"; }
+
+/* Dotted road divider */
+.road-divider {
+  height: 3px;
+  background-image: repeating-linear-gradient(to right, #111 0, #111 22px, transparent 22px, transparent 44px);
+  opacity: 0.15;
+}
