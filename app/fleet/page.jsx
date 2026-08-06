@@ -44,7 +44,7 @@ export default function Fleet() {
       </section>
 
       {/* FLEET GRID */}
-      <section className="max-w-6xl mx-auto px-6 md:px-10 -mt-16 sm:-mt-20 relative z-10 flex flex-wrap justify-center gap-8 pb-10">
+      <section className="max-w-6xl mx-auto px-6 md:px-10 -mt-16 sm:-mt-20 relative z-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pb-10">
         {fleet.map((t, i) => (
           <Reveal key={t.slug} delay={i * 90}>
             <Link href={`/fleet/${t.slug}`}>

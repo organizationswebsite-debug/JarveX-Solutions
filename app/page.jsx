@@ -122,7 +122,7 @@ export default function Home() {
           {fleet.map((t, i) => (
             <Reveal key={t.slug} delay={i * 90}>
               <Link href={`/fleet/${t.slug}`}>
-                <TruckCard truck={t} />
+                <TruckCard truck={t} size="large" />
               </Link>
             </Reveal>
           ))}
