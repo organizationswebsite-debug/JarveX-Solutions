@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import ContactForm from "@/components/ContactForm";
 import QuickContactCard from "@/components/QuickContactCard";
@@ -187,3 +187,4 @@ export default function Contact() {
     </div>
   );
 }
+

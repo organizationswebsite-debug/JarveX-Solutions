@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { regions, totalStates } from "@/lib/states";
@@ -53,3 +53,4 @@ export default function CoverageMap() {
     </div>
   );
 }
+

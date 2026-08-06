@@ -1,4 +1,4 @@
-const STEPS = [
+﻿const STEPS = [
   { n: "1", title: "Book Your Truck", copy: "Onboard in under an hour with your MC authority, insurance, and equipment details." },
   { n: "2", title: "Get Dispatched", copy: "Your dedicated dispatcher sources and negotiates freight matched to your lanes." },
   { n: "3", title: "Run The Miles", copy: "Route, fuel stops, and delivery windows planned so you're never guessing." },
@@ -30,3 +30,4 @@ export default function StepSection() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-export default function QuickContactCard({ icon, label, value, sub, href }) {
+﻿export default function QuickContactCard({ icon, label, value, sub, href }) {
   return (
     <a
       href={href}
@@ -15,3 +15,4 @@ export default function QuickContactCard({ icon, label, value, sub, href }) {
     </a>
   );
 }
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { services } from "@/lib/services";
 
@@ -53,7 +53,7 @@ export default function Services() {
                     src={s.image}
                     alt={s.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
+                    loading="eager" fetchpriority="high"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/10 to-transparent" />
                   <span className="absolute top-4 left-4 w-9 h-9 rounded-xl bg-white/15 backdrop-blur border border-white/25 text-white font-display font-bold text-sm flex items-center justify-center">
@@ -128,3 +128,4 @@ export default function Services() {
     </div>
   );
 }
+

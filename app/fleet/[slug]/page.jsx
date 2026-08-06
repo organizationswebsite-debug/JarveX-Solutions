@@ -109,7 +109,7 @@ export default function TruckPage({ params }) {
           {truck.gallery.map((img, i) => (
             <Reveal key={img} delay={i * 100}>
               <div className="rounded-[24px] overflow-hidden border-4 border-white shadow-xl h-64 sm:h-80">
-                <img src={img} alt={`${truck.name} freight ${i + 1}`} className="w-full h-full object-cover" loading="lazy" />
+                <img src={img} alt={`${truck.name} freight ${i + 1}`} className="w-full h-full object-cover" loading="eager" fetchpriority="high" />
               </div>
             </Reveal>
           ))}
@@ -177,7 +177,7 @@ export default function TruckPage({ params }) {
             <Reveal key={t.slug} delay={i * 90}>
               <Link href={`/fleet/${t.slug}`} className="card-premium group block bg-white rounded-2xl overflow-hidden border border-line h-full">
                 <div className="relative h-48 overflow-hidden">
-                  <img src={t.image} alt={t.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                  <img src={t.image} alt={t.name} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="eager" fetchpriority="high" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-4">
                     <p className="font-display font-bold text-sm text-white">{t.name}</p>

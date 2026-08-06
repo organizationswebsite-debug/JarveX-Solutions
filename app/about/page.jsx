@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import TeamCard from "@/components/TeamCard";
 import { team } from "@/lib/team";
@@ -218,3 +218,4 @@ export default function About() {
     </div>
   );
 }
+

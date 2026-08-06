@@ -1,14 +1,14 @@
-export default function HeroVisual() {
+﻿export default function HeroVisual() {
   return (
     <div className="relative w-full h-full flex items-center justify-center">
       <div className="absolute w-[380px] h-[380px] bg-orange/20 rounded-full blur-[100px]" />
 
       <div className="relative w-full max-w-md rounded-[28px] overflow-hidden shadow-2xl rotate-2 animate-floatY border-4 border-white" style={{ "--tilt": "2deg" }}>
         <img
-          src="/homehero.jpg"
+          src="/homehero.jpeg"
           alt="Semi truck on the highway"
           className="w-full h-[420px] object-cover"
-          loading="lazy"
+          loading="eager" fetchpriority="high"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
         <div className="absolute bottom-5 left-5 right-5">
@@ -29,3 +29,4 @@ export default function HeroVisual() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-const STATS = [
+﻿const STATS = [
   { label: "Loads Dispatched / Month", value: "9,400+" },
   { label: "Avg. Response Time", value: "< 4 MIN" },
   { label: "Avg. Rate Secured", value: "$3.12/MI" },
@@ -22,3 +22,4 @@ export default function StatTicker() {
     </div>
   );
 }
+

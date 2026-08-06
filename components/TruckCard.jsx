@@ -1,11 +1,11 @@
-export default function TruckCard({ truck, size = "normal" }) {
+﻿export default function TruckCard({ truck, size = "normal" }) {
   const h = size === "large" ? "h-[320px]" : "h-[760px]";
   return (
     <div
       className={`straight-card relative ${h} w-full max-w-[360px] rounded-2xl overflow-hidden border-4 border-white shadow-xl bg-white`}
       style={{ "--straight": `${truck.tilt}deg` }}
     >
-      <img src={truck.image} alt={truck.name} className="w-full h-full object-cover" loading="lazy" />
+      <img src={truck.image} alt={truck.name} className="w-full h-full object-cover" loading="eager" fetchpriority="high" />
       <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/10 to-transparent" />
       <div className="absolute top-3 left-3 flex items-center gap-1.5 bg-white/90 rounded-full px-2.5 py-1">
         <span className="text-orange text-xs">★</span>
@@ -19,3 +19,4 @@ export default function TruckCard({ truck, size = "normal" }) {
     </div>
   );
 }
+

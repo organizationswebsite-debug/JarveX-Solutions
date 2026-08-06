@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Link from "next/link";
 import { services } from "@/lib/services";
@@ -172,3 +172,4 @@ export default function Footer() {
     </footer>
   );
 }
+

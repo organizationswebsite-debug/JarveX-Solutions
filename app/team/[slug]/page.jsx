@@ -30,7 +30,7 @@ export default function TeamMemberPage({ params }) {
       <section className="max-w-7xl mx-auto px-6 md:px-10 mb-20 grid grid-cols-1 lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16 items-center">
         <Reveal>
           <div className="relative rounded-[28px] overflow-hidden border-4 border-white shadow-2xl">
-            <img src={member.image} alt={member.name} className="w-full h-[440px] sm:h-[520px] object-cover" loading="lazy" />
+            <img src={member.image} alt={member.name} className="w-full h-[440px] sm:h-[520px] object-cover" loading="eager" fetchpriority="high" />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <p className="text-[10px] font-mono uppercase tracking-widest text-orange2 mb-1">

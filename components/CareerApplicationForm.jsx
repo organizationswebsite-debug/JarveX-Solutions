@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { roles } from "@/lib/careers";
@@ -156,3 +156,4 @@ function Field({ label, name, value, onChange, type = "text", required = false }
     </div>
   );
 }
+

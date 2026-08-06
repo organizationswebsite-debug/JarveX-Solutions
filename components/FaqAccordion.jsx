@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { faqCategories } from "@/lib/faq";
@@ -57,3 +57,4 @@ export default function FaqAccordion() {
     </div>
   );
 }
+

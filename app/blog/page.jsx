@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import { posts } from "@/lib/blog";
 
@@ -49,7 +49,7 @@ export default function Blog() {
                 src={featured.image}
                 alt={featured.title}
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                loading="lazy"
+                loading="eager" fetchpriority="high"
               />
               <span className="absolute top-5 left-5 bg-orange text-white text-[11px] font-mono uppercase tracking-widest px-3 py-1.5 rounded-full">
                 Featured
@@ -96,7 +96,7 @@ export default function Blog() {
                     src={p.image}
                     alt={p.title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                    loading="lazy"
+                    loading="eager" fetchpriority="high"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/60 via-transparent to-transparent" />
                   <span className="absolute bottom-3 left-4 text-[10px] font-mono uppercase tracking-widest text-white/90 bg-ink/50 backdrop-blur px-2.5 py-1 rounded-full">
@@ -167,7 +167,7 @@ export default function Blog() {
                   src="/blogcta.jpeg"
                   alt="Owner-operator on the road"
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  loading="eager" fetchpriority="high"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
               </div>
@@ -194,3 +194,4 @@ export default function Blog() {
     </div>
   );
 }
+

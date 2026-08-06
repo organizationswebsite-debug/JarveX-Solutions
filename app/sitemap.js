@@ -1,4 +1,4 @@
-import { services } from "@/lib/services";
+﻿import { services } from "@/lib/services";
 import { fleet } from "@/lib/fleet";
 import { posts } from "@/lib/blog";
 import { team } from "@/lib/team";
@@ -46,3 +46,4 @@ export default function sitemap() {
 
   return [...staticRoutes, ...serviceRoutes, ...fleetRoutes, ...blogRoutes, ...teamRoutes];
 }
+

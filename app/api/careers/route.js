@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+﻿import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 export async function POST(request) {
@@ -63,3 +63,4 @@ ${message || "N/A"}
     return NextResponse.json({ error: "Failed to submit application" }, { status: 500 });
   }
 }
+

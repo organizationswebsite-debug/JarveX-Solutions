@@ -86,7 +86,7 @@ export default function ServicePage({ params }) {
         <div className="max-w-7xl mx-auto px-6 md:px-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <Reveal>
             <div className="rounded-[28px] overflow-hidden border-4 border-white shadow-2xl">
-              <img src={service.image} alt={service.title} className="w-full h-[320px] sm:h-[400px] object-cover" loading="lazy" />
+              <img src={service.image} alt={service.title} className="w-full h-[320px] sm:h-[400px] object-cover" loading="eager" fetchpriority="high" />
             </div>
           </Reveal>
           <Reveal delay={100}>
@@ -115,7 +115,7 @@ export default function ServicePage({ params }) {
             <Reveal key={s.slug} delay={i * 90}>
               <Link href={`/services/${s.slug}`} className="card-premium group block bg-white rounded-2xl overflow-hidden border border-line h-full">
                 <div className="relative h-40 overflow-hidden">
-                  <img src={s.image} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                  <img src={s.image} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="eager" fetchpriority="high" />
                   <div className="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent" />
                   <div className="absolute bottom-3 left-4">
                     <p className="font-display font-bold text-sm text-white">{s.title}</p>

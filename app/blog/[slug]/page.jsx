@@ -102,7 +102,7 @@ export default function BlogPost({ params }) {
             <Reveal key={p.slug} delay={i * 90}>
               <Link href={`/blog/${p.slug}`} className="card-premium group block bg-white rounded-2xl overflow-hidden border border-line h-full">
                 <div className="relative h-40 overflow-hidden">
-                  <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                  <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="eager" fetchpriority="high" />
                 </div>
                 <div className="p-5">
                   <p className="text-[10px] font-mono uppercase tracking-widest text-orange mb-2">{p.category}</p>

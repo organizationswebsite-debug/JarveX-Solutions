@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import TruckCard from "@/components/TruckCard";
 import { fleet } from "@/lib/fleet";
@@ -98,3 +98,4 @@ export default function Fleet() {
     </div>
   );
 }
+

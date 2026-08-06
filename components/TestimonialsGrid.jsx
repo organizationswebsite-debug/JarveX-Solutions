@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import { testimonials } from "@/lib/testimonials";
@@ -62,3 +62,4 @@ export default function TestimonialsGrid() {
     </div>
   );
 }
+

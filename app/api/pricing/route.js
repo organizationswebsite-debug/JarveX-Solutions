@@ -1,4 +1,4 @@
-import nodemailer from "nodemailer";
+﻿import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
 const transporter = nodemailer.createTransport({
@@ -97,3 +97,4 @@ export async function POST(request) {
     return NextResponse.json({ error: "Failed to submit form" }, { status: 500 });
   }
 }
+

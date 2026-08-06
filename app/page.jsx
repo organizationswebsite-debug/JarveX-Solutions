@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import HeroVisual from "@/components/HeroVisual";
 import StatTicker from "@/components/StatTicker";
 import StepSection from "@/components/StepSection";
@@ -264,3 +264,4 @@ export default function Home() {
     </>
   );
 }
+

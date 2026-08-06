@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import RoleCard from "@/components/RoleCard";
 import TeamCard from "@/components/TeamCard";
@@ -192,3 +192,4 @@ export default function Careers() {
     </div>
   );
 }
+

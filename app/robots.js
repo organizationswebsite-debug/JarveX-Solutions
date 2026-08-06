@@ -1,4 +1,4 @@
-export default function robots() {
+﻿export default function robots() {
   return {
     rules: {
       userAgent: "*",
@@ -8,3 +8,4 @@ export default function robots() {
     sitemap: "https://www.jarvexsolutions.com/sitemap.xml",
   };
 }
+

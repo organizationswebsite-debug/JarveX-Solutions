@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import FaqAccordion from "@/components/FaqAccordion";
 
@@ -74,3 +74,4 @@ export default function FAQ() {
     </div>
   );
 }
+
