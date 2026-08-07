@@ -111,6 +111,15 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
         <link rel="preload" href="/homehero.jpeg" as="image" />
+        <link rel="preload" href="/aboutushero.jpeg" as="image" />
+        <link rel="preload" href="/bloghero.png" as="image" />
+        <link rel="preload" href="/careershero.png" as="image" />
+        <link rel="preload" href="/contacthero.png" as="image" />
+        <link rel="preload" href="/faqhero.jpeg" as="image" />
+        <link rel="preload" href="/fleethero.jpeg" as="image" />
+        <link rel="preload" href="/pricinghero.jpeg" as="image" />
+        <link rel="preload" href="/serviceshero.jpg" as="image" />
+        <link rel="preload" href="/testimonialshero.jpeg" as="image" />
         <link rel="preconnect" href="https://source.unsplash.com" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://source.unsplash.com" />
