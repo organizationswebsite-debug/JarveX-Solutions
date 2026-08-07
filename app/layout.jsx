@@ -110,6 +110,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
+        <link rel="preload" href="/homehero.jpeg" as="image" />
         <link rel="preconnect" href="https://source.unsplash.com" />
         <link rel="preconnect" href="https://images.unsplash.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://source.unsplash.com" />
