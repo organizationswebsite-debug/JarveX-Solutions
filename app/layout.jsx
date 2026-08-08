@@ -63,13 +63,15 @@ export const metadata = {
     siteName: SITE_NAME,
     title: `${SITE_NAME} | Premium Truck Dispatch Services`,
     description: SITE_DESCRIPTION,
-    images: [{ url: "/opengraph-image.png", width: 1200, height: 630, alt: SITE_NAME }],
+    images: [
+      { url: `${SITE_URL}/opengraph-image.png`, width: 1200, height: 630, alt: SITE_NAME },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} | Premium Truck Dispatch Services`,
     description: SITE_DESCRIPTION,
-    images: ["/twitter-image.png"],
+    images: [`${SITE_URL}/twitter-image.png`],
   },
   icons: {
     icon: "/icon.png",
@@ -110,6 +112,18 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
       <head>
+        <meta property="og:site_name" content={SITE_NAME} />
+        <title>{`${SITE_NAME} | Premium Truck Dispatch Services`}</title>
+        <meta name="application-name" content={SITE_NAME} />
+        <meta name="apple-mobile-web-app-title" content={SITE_NAME} />
+        <meta property="og:title" content={`${SITE_NAME} | Premium Truck Dispatch Services`} />
+        <meta property="og:description" content={SITE_DESCRIPTION} />
+        <meta property="og:image" content={`${SITE_URL}/opengraph-image.png`} />
+        <meta property="og:image:alt" content={SITE_NAME} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${SITE_NAME} | Premium Truck Dispatch Services`} />
+        <meta name="twitter:description" content={SITE_DESCRIPTION} />
+        <meta name="twitter:image" content={`${SITE_URL}/twitter-image.png`} />
         <link rel="preload" href="/homehero.jpeg" as="image" />
         <link rel="preload" href="/aboutushero.jpeg" as="image" />
         <link rel="preload" href="/bloghero.png" as="image" />
