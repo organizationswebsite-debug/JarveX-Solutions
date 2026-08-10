@@ -120,6 +120,8 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content={SITE_DESCRIPTION} />
         <meta property="og:image" content={`${SITE_URL}/opengraph-image.png`} />
         <meta property="og:image:alt" content={SITE_NAME} />
+        <link rel="icon" href="https://jarvexsolutions.com" sizes="any" />
+        <link rel="apple-touch-icon" href="https://jarvexsolutions.com" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={`${SITE_NAME} | Premium Truck Dispatch Services`} />
         <meta name="twitter:description" content={SITE_DESCRIPTION} />
