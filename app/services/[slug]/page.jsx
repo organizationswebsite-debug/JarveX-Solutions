@@ -136,7 +136,7 @@ export default function ServicePage({ params }) {
               Ready For {service.title}?
             </h2>
             <p className="text-white/80 mb-10 max-w-md mx-auto">
-              This service — and every other channel — is included the moment your truck is onboarded.
+              This service and every other channel is included the moment your truck is onboarded.
             </p>
             <Link href="/contact" className="inline-block px-10 py-4 rounded-full bg-white text-orange font-bold hover:bg-ink hover:text-white transition-colors">
               Get Dispatched
